@@ -23,7 +23,7 @@ const DatosUsuario = ({ updateStep }) => {
         e.preventDefault();
         if (email.valid && password.valid) {
           console.log("Siguiente formulario");
-          console.log(email, password);
+          console.log({ email: email, password: "REDACTED" });
           updateStep(1);
         } else {
           console.log("No hacer nada");
